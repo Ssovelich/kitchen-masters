@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/kitchen-masters/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-0338de53.js">
     <link rel="stylesheet" href="/kitchen-masters/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/kitchen-masters/assets/index-1387feae.css">
+    <link rel="stylesheet" href="/kitchen-masters/assets/index-c87c59dd.css">
   </head>
   <body>
     <header class="header">
@@ -89,15 +89,77 @@
     <main>
       <section class="section hero-section">
   <div class="container hero-container">
-    <div class="hero-wrapper-img">
-      <img class="hero-girl" src="/kitchen-masters/assets/girl-mob-c30a3a03.png" />
-      <img class="hero-chef" src="/kitchen-masters/assets/chef-mob-cc72a349.png" />
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/girl-desk-6b0d1958.png 1x, /kitchen-masters/assets/girl-desk@2x-b286bb55.png 2x"
+        media="(min-width: 1200px)" />
+      <source
+        srcset="../img/hero/girl-mob.png 1x, ../img/hero/girl-mob@2x.png 2x"
+        media="(min-width: 320px)" />
+      <img
+        class="hero-girl"
+        src="/kitchen-masters/assets/girl-mob-c30a3a03.png"
+        alt="hero-girl"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/chef-desk-2a773a7c.png 1x, /kitchen-masters/assets/chef-desk@2x-6899b1b7.png 2x"
+        media="(min-width: 1200px)" />
+      <source
+        srcset="/kitchen-masters/assets/chef-mob-cc72a349.png 1x, /kitchen-masters/assets/chef-mob@2x-1d03d4ee.png 2x"
+        media="(min-width: 320px)" />
+      <img
+        class="hero-chef"
+        src="/kitchen-masters/assets/chef-mob-cc72a349.png"
+        alt="hero-chef"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/kitchen-masters-desk-b3f9a831.png 1x, /kitchen-masters/assets/kitchen-masters-desk@2x-2ecf7637.png 2x"
+        media="(min-width: 1200px)" />
+
+      <source
+        srcset="/kitchen-masters/assets/kitchen-masters-mob-b2626736.png 1x, /kitchen-masters/assets/kitchen-masters-mob@2x-83288ac9.png 2x"
+        media="(min-width: 320px)" />
       <img
         class="hero-kitchen-masters"
         src="/kitchen-masters/assets/kitchen-masters-mob-b2626736.png"
+        alt="hero-kitchen-masters"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/cooking-mania-desk-0347ea31.png 1x, /kitchen-masters/assets/cooking-mania-desk@2x-958df718.png 2x"
+        media="(min-width: 1200px)" />
+      <source
+        srcset="/kitchen-masters/assets/cooking-mania-mob-50d1e23a.png 1x, /kitchen-masters/assets/cooking-mania-mob@2x-09f05b34.png 2x"
+        media="(min-width: 320px)" />
+      <img
+        class="hero-cooking-mania"
+        src="/kitchen-masters/assets/cooking-mania-mob-50d1e23a.png"
+        alt="hero-cooking-mania"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source srcset="/kitchen-masters/assets/dice-e2176310.png 1x, /kitchen-masters/assets/dice@2x-88f1897f.png 2x" />
+      <img
+        class="hero-dice"
+        src="/kitchen-masters/assets/dice-e2176310.png"
+        alt="hero-dice"
+        loading="lazy"
       />
-      <img class="hero-cooking-mania" src="/kitchen-masters/assets/cooking-mania-mob-50d1e23a.png" />
-    </div>
+    </picture>
+    <picture>
+      <source srcset="/kitchen-masters/assets/rocket-f463ecb3.png 1x, /kitchen-masters/assets/rocket@2x-4ea8ee20.png 2x" />
+      <img
+        class="hero-rocket"
+        src="/kitchen-masters/assets/rocket-f463ecb3.png"
+        alt="hero-rocket"
+        loading="lazy"
+      />
+    </picture>
     <div class="hero-wrapper-download">
       <a class="hero-download-a" href="">
         <img
@@ -540,13 +602,13 @@
       <p class="footer-text">On the right:</p>
       <ul class="footer-list">
         <li class="footer-list-item">
-          <a href="../pages/privacy-policy.html" class="footer-list-item-a"
+          <a href="/pages/privacy-policy.html" class="footer-list-item-a"
             >Privacy policy</a
           >
         </li>
         <li class="footer-list-item">/</li>
         <li class="footer-list-item">
-          <a href="../pages/terms-conditions.html" class="footer-list-item-a"
+          <a href="/pages/terms-conditions.html" class="footer-list-item-a"
             >Terms and conditions</a
           >
         </li>
