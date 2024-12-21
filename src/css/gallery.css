@@ -2,7 +2,10 @@
   padding: 30px;
   min-width: 100%;
 }
-.container-gallery > .mySwiper {
+.swiper {
+  width: 1000px;
+}
+/* .container-gallery > .mySwiper {
   width: 600px;
   height: 100%;
   margin: auto;
@@ -11,11 +14,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
-}
-.img-slider {
+  } */
+/* .img-slider {
   text-align: center;
 }
 .img-slider img {
   max-width: 100%;
-}
+} */
