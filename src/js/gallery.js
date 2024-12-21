@@ -4,7 +4,7 @@ import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+// coment test
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Keyboard, Mousewheel, Pagination],
   speed: 1000,
