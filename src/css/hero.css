@@ -1,0 +1,66 @@
+.hero-section {
+  width: 320px;
+  height: 512px;
+  background-image: url('../img/hero/background-mob.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.hero-wrapper-download {
+  padding-top: 312px;
+}
+
+.hero-download-google {
+  margin: auto;
+}
+
+.hero-download-a-img {
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+  color: #000;
+}
+
+.hero-wrapper-img {
+  position: relative;
+  width: 320px;
+}
+
+.hero-girl {
+  position: absolute;
+  width: 142px;
+  height: 164px;
+  top: 30px;
+  left: 7px;
+}
+
+.hero-chef {
+  position: absolute;
+  width: 128px;
+  height: 178px;
+  top: 12px;
+  left: 168px;
+}
+
+.hero-kitchen-masters {
+  position: absolute;
+  width: 220px;
+  top: 126px;
+  left: 49px;
+  right: 51px;
+}
+
+.hero-cooking-mania {
+  position: absolute;
+  width: 220px;
+  top: 277px;
+  left: 49px;
+  right: 51px;
+}
