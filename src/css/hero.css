@@ -1,6 +1,5 @@
 .hero-section {
   width: 320px;
-  height: 512px;
   background-image: url('../img/hero/background-mob.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -8,8 +7,22 @@
   margin: 0 auto;
 }
 
+/* .hero-bg-top {
+  width: 320px;
+  height: 24px;
+  background: linear-gradient(180deg, rgba(255, 249, 235, 0) 0%, #94320c 100%);
+} */
+
+.hero-bg-bot {
+}
+
+.hero-container {
+  position: relative;
+}
+
 .hero-wrapper-download {
-  padding-top: 312px;
+  padding-top: 340px;
+  padding-bottom: 49px;
 }
 
 .hero-download-google {
@@ -28,39 +41,95 @@
   color: #000;
 }
 
-.hero-wrapper-img {
-  position: relative;
+/* .hero-wrapper-img {
   width: 320px;
-}
+} */
 
 .hero-girl {
   position: absolute;
-  width: 142px;
-  height: 164px;
-  top: 30px;
+  top: 38px;
   left: 7px;
 }
 
 .hero-chef {
   position: absolute;
-  width: 128px;
-  height: 178px;
-  top: 12px;
-  left: 168px;
+  top: 14px;
+  left: 163px;
 }
 
 .hero-kitchen-masters {
   position: absolute;
-  width: 220px;
+  width: 240px;
   top: 126px;
-  left: 49px;
-  right: 51px;
+  left: 39px;
 }
 
 .hero-cooking-mania {
   position: absolute;
   width: 220px;
-  top: 277px;
+  top: 275px;
   left: 49px;
-  right: 51px;
+}
+
+.hero-rocket {
+  display: none;
+}
+
+.hero-dice {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-section {
+    width: 1200px;
+    height: 759px;
+    background-image: url('../img/hero/backgound-desk.jpg');
+  }
+
+  .hero-wrapper-download {
+    padding-top: 538px;
+  }
+  .hero-girl {
+    position: absolute;
+    width: 312px;
+    top: 73px;
+    right: 868px;
+  }
+
+  .hero-chef {
+    position: absolute;
+    width: 322px;
+    top: 71px;
+    left: 830px;
+  }
+
+  .hero-kitchen-masters {
+    position: absolute;
+    width: 684px;
+    top: 30px;
+    left: 220px;
+  }
+
+  .hero-cooking-mania {
+    position: absolute;
+    width: 596px;
+    top: 430px;
+    left: 270px;
+  }
+
+  .hero-dice {
+    display: block;
+    position: absolute;
+    width: 306px;
+    top: 297px;
+    left: 830px;
+  }
+
+  .hero-rocket {
+    display: block;
+    position: absolute;
+    width: 306px;
+    top: 297px;
+    right: 836px;
+  }
 }
