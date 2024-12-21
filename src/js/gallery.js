@@ -4,7 +4,7 @@ import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// coment test
+
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Keyboard, Mousewheel, Pagination],
   speed: 1000,
@@ -31,10 +31,13 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
     320: {
+      centredSlides: true,
+      slidesPerGroup: 2,
       slidesPerView: 2,
       spaceBetween: 16,
     },
     1200: {
+      slidesPerGroup: 1,
       slidesPerView: 3,
       spaceBetween: 32,
     },
