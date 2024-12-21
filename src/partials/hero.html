@@ -1,14 +1,88 @@
 <section class="section hero-section">
   <div class="container hero-container">
-    <div class="hero-wrapper-img">
-      <img class="hero-girl" src="/img/hero/girl-mob.png" />
-      <img class="hero-chef" src="/img/hero/chef-mob.png" />
+    <picture>
+      <source
+        srcset="/img/hero/girl-desk.png 1x, /img/hero/girl-desk@2x.png 2x"
+        media="(min-width: 1200px)" />
+      <source
+        srcset="../img/hero/girl-mob.png 1x, ../img/hero/girl-mob@2x.png 2x"
+        media="(min-width: 320px)" />
+      <img
+        class="hero-girl"
+        src="/img/hero/girl-mob.png"
+        alt="hero-girl"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source
+        srcset="/img/hero/chef-desk.png 1x, /img/hero/chef-desk@2x.png 2x"
+        media="(min-width: 1200px)" />
+      <source
+        srcset="/img/hero/chef-mob.png 1x, /img/hero/chef-mob@2x.png 2x"
+        media="(min-width: 320px)" />
+      <img
+        class="hero-chef"
+        src="/img/hero/chef-mob.png"
+        alt="hero-chef"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source
+        srcset="
+          /img/hero/kitchen-masters-desk.png    1x,
+          /img/hero/kitchen-masters-desk@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+
+      <source
+        srcset="
+          /img/hero/kitchen-masters-mob.png    1x,
+          /img/hero/kitchen-masters-mob@2x.png 2x
+        "
+        media="(min-width: 320px)" />
       <img
         class="hero-kitchen-masters"
         src="/img/hero/kitchen-masters-mob.png"
+        alt="hero-kitchen-masters"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source
+        srcset="
+          /img/hero/cooking-mania-desk.png    1x,
+          /img/hero/cooking-mania-desk@2x.png 2x
+        "
+        media="(min-width: 1200px)" />
+      <source
+        srcset="
+          /img/hero/cooking-mania-mob.png    1x,
+          /img/hero/cooking-mania-mob@2x.png 2x
+        "
+        media="(min-width: 320px)" />
+      <img
+        class="hero-cooking-mania"
+        src="/img/hero/cooking-mania-mob.png"
+        alt="hero-cooking-mania"
+        loading="lazy"
+    /></picture>
+    <picture>
+      <source srcset="/img/hero/dice.png 1x, /img/hero/dice@2x.png 2x" />
+      <img
+        class="hero-dice"
+        src="/img/hero/dice.png"
+        alt="hero-dice"
+        loading="lazy"
       />
-      <img class="hero-cooking-mania" src="/img/hero/cooking-mania-mob.png" />
-    </div>
+    </picture>
+    <picture>
+      <source srcset="/img/hero/rocket.png 1x, /img/hero/rocket@2x.png 2x" />
+      <img
+        class="hero-rocket"
+        src="/img/hero/rocket.png"
+        alt="hero-rocket"
+        loading="lazy"
+      />
+    </picture>
     <div class="hero-wrapper-download">
       <a class="hero-download-a" href="">
         <img
