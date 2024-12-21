@@ -1,19 +1,18 @@
 .hero-section {
   width: 320px;
-  background-image: url('../img/hero/background-mob.jpg');
+  background-image: url('/img/hero/background-mob.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 }
 
-/* .hero-bg-top {
-  width: 320px;
-  height: 24px;
-  background: linear-gradient(180deg, rgba(255, 249, 235, 0) 0%, #94320c 100%);
-} */
-
-.hero-bg-bot {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('/img/hero/background-mob@2x.jpg');
+  }
 }
 
 .hero-container {
@@ -40,10 +39,6 @@
   text-align: center;
   color: #000;
 }
-
-/* .hero-wrapper-img {
-  width: 320px;
-} */
 
 .hero-girl {
   position: absolute;
@@ -79,57 +74,94 @@
   display: none;
 }
 
+.hero-hand-chef {
+  display: none;
+}
+
+.hero-detal-rocket {
+  display: none;
+}
+
 @media only screen and (min-width: 1200px) {
   .hero-section {
     width: 1200px;
     height: 759px;
-    background-image: url('../img/hero/backgound-desk.jpg');
+    background-image: url('/img/hero/backgound-desk.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('/img/hero/backgound-desk@2x.jpg');
+    }
+  }
+  .hero-wrapper-download {
+    padding-top: 555px;
   }
 
-  .hero-wrapper-download {
-    padding-top: 538px;
+  .hero-download-a-img {
+    margin-bottom: 32px;
   }
+
+  .hero-text {
+    font-size: 28px;
+  }
+
   .hero-girl {
-    position: absolute;
-    width: 312px;
-    top: 73px;
-    right: 868px;
+    width: 380px;
+    top: 75px;
+    left: -75px;
+    z-index: 1;
   }
 
   .hero-chef {
-    position: absolute;
     width: 322px;
-    top: 71px;
+    top: 105px;
     left: 830px;
   }
 
   .hero-kitchen-masters {
-    position: absolute;
-    width: 684px;
-    top: 30px;
-    left: 220px;
+    width: 720px;
+    top: 10px;
+    left: 209px;
   }
 
   .hero-cooking-mania {
+    width: 610px;
+    top: 435px;
+    left: 265px;
+  }
+
+  .hero-rocket {
+    display: block;
     position: absolute;
-    width: 596px;
-    top: 430px;
-    left: 270px;
+    width: 280px;
+    top: 300px;
+    left: 12px;
   }
 
   .hero-dice {
     display: block;
     position: absolute;
     width: 306px;
-    top: 297px;
+    top: 350px;
     left: 830px;
   }
 
-  .hero-rocket {
+  .hero-hand-chef {
     display: block;
     position: absolute;
-    width: 306px;
-    top: 297px;
-    right: 836px;
+    width: 65px;
+    top: 384px;
+    left: 1002px;
+  }
+
+  .hero-detal-rocket {
+    display: block;
+    position: absolute;
+    width: 118px;
+    top: 378px;
+    left: 95px;
+    z-index: 2;
   }
 }
