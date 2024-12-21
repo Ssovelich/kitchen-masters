@@ -43,6 +43,38 @@
   color: #1c03ae;
 }
 
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--golden-tainoi-400);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-up:hover,
+.btn-up:focus {
+  background-color: var(--golden-tainoi-500);
+}
+.btn-up.show {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+}
+.btn-up.hide {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
 @media only screen and (min-width: 1200px) {
   .container-terms {
     width: 600px;
