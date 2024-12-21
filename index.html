@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/kitchen-masters/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-0338de53.js">
     <link rel="stylesheet" href="/kitchen-masters/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/kitchen-masters/assets/index-e891ad2d.css">
+    <link rel="stylesheet" href="/kitchen-masters/assets/index-ab819abf.css">
   </head>
   <body>
     <header class="header">
@@ -41,7 +41,7 @@
             <li class="nav-item"><a href="#gallery">Gallery</a></li>
             <li class="nav-item"><a href="#about">About the game</a></li>
             <li class="nav-item"><a href="#how-to-play">How to play</a></li>
-            <li class="nav-item"><a href="#game-features">Game Features</a></li>
+            <li class="nav-item"><a href="#features">Game Features</a></li>
           </ul>
         </nav>
       </div>
@@ -126,26 +126,28 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <picture>
-            <source
-              srcset="/kitchen-masters/assets/purple-desk-888eed74.jpg 1x, /kitchen-masters/assets/purple-desk@2x-f7dc9024.jpg 2x"
-              media="(min-width: 1200px)"
-              width="272"
-              height="484"
-            />
-            <source
-              srcset="/kitchen-masters/assets/purple-mob-bddeaccc.jpg 1x, /kitchen-masters/assets/purple-mob@2x-7863a701.jpg 2x"
-              media="(min-width: 320px)"
-              width="136"
-              height="242"
-            />
-            <img
-              class="gallery-img"
-              src="/kitchen-masters/assets/purple-mob-bddeaccc.jpg"
-              alt="gallery-img-purple"
-              loading="lazy"
-            />
-          </picture>
+          <div class="img-slider">
+            <picture>
+              <source
+                srcset="/kitchen-masters/assets/purple-desk-888eed74.jpg 1x, /kitchen-masters/assets/purple-desk@2x-f7dc9024.jpg 2x"
+                media="(min-width: 1200px)"
+                width="272"
+                height="484"
+              />
+              <source
+                srcset="/kitchen-masters/assets/purple-mob-bddeaccc.jpg 1x, /kitchen-masters/assets/purple-mob@2x-7863a701.jpg 2x"
+                media="(min-width: 320px)"
+                width="136"
+                height="242"
+              />
+              <img
+                class="gallery-img"
+                src="/kitchen-masters/assets/purple-mob-bddeaccc.jpg"
+                alt="gallery-img-purple"
+                loading="lazy"
+              />
+            </picture>
+          </div>
         </div>
         <div class="swiper-slide">
           <div class="img-slider">
@@ -335,7 +337,7 @@
   </div>
 </section>
 
-      <section class="section section-" id="features">
+      <section class="section section-game-features" id="features">
   <div class="container container-game-features">
     <h2 class="features-title">Game Features</h2>
     <ul class="features-list">
