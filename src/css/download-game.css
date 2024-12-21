@@ -24,10 +24,13 @@
 .text-bold {
   font-weight: bold;
 }
+
 .download-google {
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.download-google:hover {
+
+.download-google:hover,
+.download-google:focus {
   scale: 1.2;
 }
 
