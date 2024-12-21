@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/kitchen-masters/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-0338de53.js">
     <link rel="stylesheet" href="/kitchen-masters/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/kitchen-masters/assets/index-949ff34b.css">
+    <link rel="stylesheet" href="/kitchen-masters/assets/index-cb91a7cb.css">
   </head>
   <body>
     <header class="header">
@@ -39,11 +39,11 @@
       <div class="hidden">
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#hero">Home</a></li>
-            <li class="nav-item"><a href="#gallery">Gallery</a></li>
-            <li class="nav-item"><a href="#about">About the game</a></li>
-            <li class="nav-item"><a href="#how-to-play">How to play</a></li>
-            <li class="nav-item"><a href="#features">Game Features</a></li>
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="gallery">Gallery</a></li>
+            <li class="nav-item"><a href="about">About the game</a></li>
+            <li class="nav-item"><a href="how-to-play">How to play</a></li>
+            <li class="nav-item"><a href="features">Game Features</a></li>
           </ul>
         </nav>
       </div>
@@ -89,14 +89,14 @@
 </header>
 
     <main>
-      <section class="section hero-section">
+      <section id="hero" class="section hero-section">
   <div class="container hero-container">
     <picture>
       <source
         srcset="/kitchen-masters/assets/girl-desk-6b0d1958.png 1x, /kitchen-masters/assets/girl-desk@2x-b286bb55.png 2x"
         media="(min-width: 1200px)" />
       <source
-        srcset="../img/hero/girl-mob.png 1x, ../img/hero/girl-mob@2x.png 2x"
+        srcset="/kitchen-masters/assets/girl-mob-c30a3a03.png 1x, /kitchen-masters/assets/girl-mob@2x-4f5811c8.png 2x"
         media="(min-width: 320px)" />
       <img
         class="hero-girl"
@@ -159,6 +159,22 @@
         class="hero-rocket"
         src="/kitchen-masters/assets/rocket-f463ecb3.png"
         alt="hero-rocket"
+        loading="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/handChef-e61eb5c0.png 1x, /kitchen-masters/assets/handChef@2x-734c3d04.png 2x"
+      />
+      <img class="hero-hand-chef" src="/kitchen-masters/assets/handChef-e61eb5c0.png" loading="lazy" />
+    </picture>
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/detalRocket-dc9d88f7.png 1x, /kitchen-masters/assets/detalRocket@2x-7ef12671.png 2x"
+      />
+      <img
+        class="hero-detal-rocket"
+        src="/kitchen-masters/assets/detalRocket-dc9d88f7.png"
         loading="lazy"
       />
     </picture>
