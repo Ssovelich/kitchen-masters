@@ -3,7 +3,26 @@
   min-width: 100%;
 }
 .swiper {
-  width: 1000px;
+  width: 320px;
+}
+.swiper-pagination > .swiper-pagination-bullet {
+  background: var(--golden-tainoi-400);
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+.swiper > .swiper-pagination {
+  position: absolute;
+  text-align: center;
+  /* transition: 300ms opacity; */
+  transform: translate3d(0, 0, 0);
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background: var(--golden-tainoi-500);
+  width: 24px;
+  height: 12px;
+  border-radius: 12px;
 }
 /* .container-gallery > .mySwiper {
   width: 600px;
