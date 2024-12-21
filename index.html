@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/kitchen-masters/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Master: Cooking Mania</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/kitchen-masters/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-0338de53.js">
+    <link rel="stylesheet" href="/kitchen-masters/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/kitchen-masters/assets/index-181d6c90.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container container-header">
+    <div class="header-wrap">
+      <img
+        class="header-logo"
+        src="/img/logo.png"
+        srcset="/img/logo.png 1x, /img/logo@2x.png 2x"
+        alt="logo-image"
+        width="32"
+        height="32"
+      />
+      <button class="btn-menu" type="button" aria-label="btn menu">
+        <svg class="icon-dots" width="8" height="26">
+          <use href="/kitchen-masters/assets/sprite-da0517d3.svg#dots"></use>
+        </svg>
+      </button>
+      <div class="hidden">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a href="#about">About the game</a></li>
+            <li class="nav-item"><a href="#how-to-play">How to play</a></li>
+            <li class="nav-item"><a href="#game-features">Game Features</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ====================== MOBILE MENU ==================== -->
+    <!-- <div class="menu-bg">
+      <div class="menu">
+        <button class="menu-close" type="button" aria-label="close menu">
+          <svg class="svg" width="28" height="28">
+            <use href="/img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li class="menu-item"><a href="/">Home</a></li>
+          <li class="menu-item"><a href="#gallery">Gallery</a></li>
+          <li class="menu-item"><a href="#about">About the game</a></li>
+          <li class="menu-item"><a href="#how-to-play">How to play</a></li>
+          <li class="menu-item"><a href="#game-features">Game Features</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- ====================== MOBILE MENU ==================== -->
+  </div>
+</header>
+
+    <main>
+      
+      <section class="section-gallery" id="gallery">
+  <div class="container container-gallery">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="img-slider">
+            <picture>
+              <source
+                srcset="/kitchen-masters/assets/yellow-desk-d13f9319.jpg 1x, /kitchen-masters/assets/yellow-desk@2x-bf021ccd.jpg 2x"
+                media="(min-width: 1200px)"
+                width="272"
+                height="484"
+              />
+              <source
+                srcset="/kitchen-masters/assets/yellow-mob-9146f2b5.jpg 1x, /kitchen-masters/assets/yellow-mob@2x-1fd88720.jpg 2x"
+                media="(min-width: 320px)"
+                width="136"
+                height="242"
+              />
+              <img
+                class="gallery-img"
+                src="/kitchen-masters/assets/yellow-mob-9146f2b5.jpg"
+                alt="gallery-img-yellow"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="/kitchen-masters/assets/purple-desk-888eed74.jpg 1x, /kitchen-masters/assets/purple-desk@2x-f7dc9024.jpg 2x"
+              media="(min-width: 1200px)"
+              width="272"
+              height="484"
+            />
+            <source
+              srcset="/kitchen-masters/assets/purple-mob-bddeaccc.jpg 1x, /kitchen-masters/assets/purple-mob@2x-7863a701.jpg 2x"
+              media="(min-width: 320px)"
+              width="136"
+              height="242"
+            />
+            <img
+              class="gallery-img"
+              src="/kitchen-masters/assets/purple-mob-bddeaccc.jpg"
+              alt="gallery-img-purple"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-slider">
+            <picture>
+              <source
+                srcset="/kitchen-masters/assets/orange-desk-3ea51adf.jpg 1x, /kitchen-masters/assets/orange-desk@2x-027162d7.jpg 2x"
+                media="(min-width: 1200px)"
+                width="272"
+                height="484"
+              />
+              <source
+                srcset="/kitchen-masters/assets/orange-mob-176522bc.jpg 1x, /kitchen-masters/assets/orange-mob@2x-28e937ba.jpg 2x"
+                media="(min-width: 320px)"
+                width="136"
+                height="242"
+              />
+              <img
+                class="gallery-img"
+                src="/kitchen-masters/assets/orange-mob-176522bc.jpg"
+                alt="gallery-img-orange"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-slider">
+            <picture>
+              <source
+                srcset="/kitchen-masters/assets/red-desk-5d710a53.jpg 1x, /kitchen-masters/assets/red-desk@2x-35e6e6bc.jpg 2x"
+                media="(min-width: 1200px)"
+                width="272"
+                height="484"
+              />
+              <source
+                srcset="/kitchen-masters/assets/red-mob-e71cfb12.jpg 1x, /kitchen-masters/assets/red-mob@2x-14504cef.jpg 2x"
+                media="(min-width: 320px)"
+                width="136"
+                height="242"
+              />
+              <img
+                class="gallery-img"
+                src="/kitchen-masters/assets/red-mob-e71cfb12.jpg"
+                alt="gallery-img-red"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img-slider">
+            <picture>
+              <source
+                srcset="/kitchen-masters/assets/blue-desk-59eeaf68.jpg 1x, /kitchen-masters/assets/blue-desk@2x-7ec9d49e.jpg 2x"
+                media="(min-width: 1200px)"
+                width="272"
+                height="484"
+              />
+              <source
+                srcset="/kitchen-masters/assets/blue-mob-488cf5a9.jpg 1x, /kitchen-masters/assets/blue-mob@2x-d5767d80.jpg 2x"
+                media="(min-width: 320px)"
+                width="136"
+                height="242"
+              />
+              <img
+                class="gallery-img"
+                src="/kitchen-masters/assets/blue-mob-488cf5a9.jpg"
+                alt="gallery-img-blue"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-btn-wrap">
+        <button
+          class="swiper-button swiper-button-next"
+          type="button"
+          aria-label="scroll right gallery"
+        >
+          <svg class="icon-swiper-right icon-swiper">
+            <use href="/kitchen-masters/assets/sprite-da0517d3.svg#right"></use>
+          </svg>
+        </button>
+        <button
+          class="swiper-button swiper-button-prev"
+          type="button"
+          aria-label="scroll left gallery"
+        >
+          <svg class="icon-swiper-left icon-swiper">
+            <use href="/kitchen-masters/assets/sprite-da0517d3.svg#left"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+      <section class="section section-about" id="about">
+  <div class="container container-about">
+    <div class="about-wrapper">
+      <h2 class="about-title">About the Game</h2>
+      <p class="about-text">
+        Kitchen Master: Cooking Mania is a fast-paced and engaging
+        time-management game where players take on the role of a chef. Prepare
+        delicious meals, serve hungry customers, and upgrade your kitchen to
+        take your cooking skills to the next level. From bustling food trucks to
+        elegant restaurants, master various cuisines and build your culinary
+        empire.
+      </p>
+    </div>
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/about-the-game-desk-3cba159a.jpg 1x, /kitchen-masters/assets/about-the-game-desk@2x-73464b8c.jpg 2x"
+        media="(min-width: 1200px)"
+        width="420"
+        height="320"
+      />
+      <source
+        srcset="/kitchen-masters/assets/about-the-game-mob-2cead929.jpg 1x, /kitchen-masters/assets/about-the-game-mob@2x-d61a02bb.jpg 2x"
+        media="(min-width: 320px)"
+        width="288"
+        height="324"
+      />
+      <img
+        class="about-the-game-img"
+        src="/kitchen-masters/assets/about-the-game-mob-2cead929.jpg"
+        alt="about-the-game"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
+
+      <section class="section-how-to-play" id="how-to-play">
+  <div class="container container-how-to-play">
+    <div class="how-to-play-wrapper">
+      <div class="how-to-play-wrap-info">
+        <h2 class="how-to-play-title">How to Play</h2>
+        <ol class="how-to-play-list">
+          <li class="how-to-play-list-item">
+            Take customer orders and prepare their meals as quickly as possible.
+          </li>
+          <li class="how-to-play-list-item">
+            Cook, plate, and serve dishes accurately to earn tips and rewards.
+          </li>
+          <li class="how-to-play-list-item">
+            Upgrade your kitchen appliances and unlock new recipes for better
+            efficiency.
+          </li>
+          <li class="how-to-play-list-item">
+            Manage time wisely to keep customers happy and avoid losing orders.
+          </li>
+          <li class="how-to-play-list-item">
+            Unlock and explore new restaurants with unique challenges and
+            cuisines.
+          </li>
+          <li class="how-to-play-list-item">
+            Participate in special events and daily challenges to earn extra
+            rewards.
+          </li>
+        </ol>
+      </div>
+      <picture>
+        <source
+          srcset="/kitchen-masters/assets/how-to-play-desk-5aba14ee.jpg 1x, /kitchen-masters/assets/how-to-play-desk@2x-b8a5668f.jpg 2x"
+          media="(min-width: 1200px)"
+          width="420"
+          height="420"
+        />
+        <source
+          srcset="/kitchen-masters/assets/how-to-play-mob-04517a28.jpg 1x, /kitchen-masters/assets/how-to-play-mob@2x-9f795644.jpg 2x"
+          media="(min-width: 320px)"
+          width="288"
+          height="260"
+        />
+        <img
+          class="how-to-play-img"
+          src="/kitchen-masters/assets/how-to-play-mob-04517a28.jpg"
+          alt="how-to-play"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="section section-" id="features">
+  <div class="container container-game-features">
+    <h2 class="features-title">Game Features</h2>
+    <ul class="features-list">
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/kitchen-masters/assets/mr-fire-desk-27a51015.jpg 1x, /kitchen-masters/assets/mr-fire-desk@2x-40db126f.jpg 2x"
+            media="(min-width: 1200px)"
+            width="272"
+            height="234"
+          />
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /kitchen-masters/assets/mr-fire-mob@2x-b3e504c7.jpg 2x"
+            media="(min-width: 320px)"
+            width="136"
+            height="136"
+          />
+          <img
+            class="features-img"
+            src="data:image/jpeg;base64,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"
+            alt="mr-fire"
+            loading="lazy"
+          />
+        </picture>
+        <p class="features-item-text">
+          Cook a variety of dishes from around the world in diverse settings.
+        </p>
+      </li>
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/kitchen-masters/assets/butcher-desk-2a424690.jpg 1x, /kitchen-masters/assets/butcher-desk@2x-7053ff50.jpg 2x"
+            media="(min-width: 1200px)"
+            width="272"
+            height="234"
+          />
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /kitchen-masters/assets/butcher-mob@2x-4a2c7d7a.jpg 2x"
+            media="(min-width: 320px)"
+            width="136"
+            height="136"
+          />
+          <img
+            class="features-img"
+            src="data:image/jpeg;base64,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"
+            alt="butcher"
+            loading="lazy"
+          />
+        </picture>
+        <p class="features-item-text">
+          Upgrade your kitchen equipment to improve speed and efficiency.
+        </p>
+      </li>
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/kitchen-masters/assets/slicer-desk-3259435b.jpg 1x, /kitchen-masters/assets/slicer-desk@2x-fadcacc3.jpg 2x"
+            media="(min-width: 1200px)"
+            width="272"
+            height="234"
+          />
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /kitchen-masters/assets/slicer-mob@2x-992f12b5.jpg 2x"
+            media="(min-width: 320px)"
+            width="136"
+            height="136"
+          />
+          <img
+            class="features-img"
+            src="/img/features/slicer.jpg"
+            alt="slicer"
+            loading="lazy"
+          />
+        </picture>
+        <p class="features-item-text">
+          Serve customers with unique personalities and preferences.
+        </p>
+      </li>
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/kitchen-masters/assets/monk-desk-257c0555.jpg 1x, /kitchen-masters/assets/monk-desk@2x-0532a7fa.jpg 2x"
+            media="(min-width: 1200px)"
+            width="272"
+            height="234"
+          />
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /kitchen-masters/assets/monk-mob@2x-7bda38ea.jpg 2x"
+            media="(min-width: 320px)"
+            width="136"
+            height="136"
+          />
+          <img
+            class="features-img"
+            src="/img/features/monk.jpg"
+            alt="monk"
+            loading="lazy"
+          />
+        </picture>
+        <p class="features-item-text">
+          Master time-management skills in increasingly challenging levels.
+        </p>
+      </li>
+      <li class="features-list-item">
+        <picture>
+          <source
+            srcset="/kitchen-masters/assets/electrify-desk-32d3ef57.jpg 1x, /kitchen-masters/assets/electrify-desk@2x-af3d207e.jpg 2x"
+            media="(min-width: 1200px)"
+            width="272"
+            height="234"
+          />
+          <source
+            srcset="data:image/jpeg;base64,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 1x, /kitchen-masters/assets/electrify-mob@2x-c2d6ddaf.jpg 2x"
+            media="(min-width: 320px)"
+            width="136"
+            height="136"
+          />
+          <img
+            class="features-img"
+            src="/img/features/electrify.jpg"
+            alt="electrify"
+            loading="lazy"
+          />
+        </picture>
+        <p class="features-item-text">
+          Enjoy colorful graphics and smooth gameplay designed for mobile
+          devices.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section section-download-game" id="download">
+  <div class="container container-download-game">
+    <picture>
+      <source
+        srcset="/kitchen-masters/assets/download-game-desk-f28f2d25.jpg 1x, /kitchen-masters/assets/download-game-desk@2x-9bc9b692.jpg 2x"
+        media="(min-width: 1200px)"
+        width="420"
+        height="380"
+      />
+      <source
+        srcset="/kitchen-masters/assets/download-game-mob-72e824b9.jpg 1x, /kitchen-masters/assets/download-game-mob@2x-1f83e0b5.jpg 2x"
+        media="(min-width: 320px)"
+        width="288"
+        height="256"
+      />
+      <img
+        class="download-img"
+        src="/kitchen-masters/assets/download-game-mob-72e824b9.jpg"
+        alt="download-game"
+        loading="lazy"
+      />
+    </picture>
+    <div class="download-wrap">
+      <p class="download-text">
+        Step into the culinary world of
+        <span class="text-bold">Kitchen Master: Cooking Mania!</span> Serve up
+        tasty dishes, manage your time, and grow your culinary empire. Download
+        now and start your journey to becoming a legendary chef!
+      </p>
+      <a href="">
+        <img
+          class="download-google"
+          src="data:image/png;base64,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"
+          srcset="data:image/png;base64,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 1x, /kitchen-masters/assets/google@2x-bc90b49c.png 2x"
+          alt="google-play"
+          width="130"
+          height="40"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-wrapper">
+      <p class="footer-text">On the right:</p>
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a href="../pages/privacy-policy.html" class="footer-list-item-a"
+            >Privacy policy</a
+          >
+        </li>
+        <li class="footer-list-item">/</li>
+        <li class="footer-list-item">
+          <a href="../pages/terms-conditions.html" class="footer-list-item-a"
+            >Terms and conditions</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copyright">All rights reserved startjoygame.com | 2024</p>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
