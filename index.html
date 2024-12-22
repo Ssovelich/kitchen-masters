@@ -13,9 +13,10 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/kitchen-masters/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-0338de53.js">
+    <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-7828e712.js">
     <link rel="stylesheet" href="/kitchen-masters/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/kitchen-masters/assets/index-cb91a7cb.css">
+    <link rel="stylesheet" href="/kitchen-masters/assets/index-95e66868.css">
   </head>
   <body>
     <header class="header">
@@ -39,7 +40,7 @@
       <div class="hidden">
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#hero">Home</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#gallery">Gallery</a></li>
             <li class="nav-item"><a href="#about">About the game</a></li>
             <li class="nav-item"><a href="#how-to-play">How to play</a></li>
@@ -63,7 +64,7 @@
         <nav class="mobile-menu-nav">
           <ul class="mobile-menu-list">
             <li class="mobile-menu-list-item">
-              <a class="mobile-menu-list-link" href="#hero">Home</a>
+              <a class="mobile-menu-list-link" href="#">Home</a>
             </li>
             <li class="mobile-menu-list-item">
               <a class="mobile-menu-list-link" href="#gallery">Gallery</a>
@@ -320,27 +321,6 @@
             </picture>
           </div>
         </div>
-      </div>
-
-      <div class="swiper-btn-wrap">
-        <button
-          class="swiper-button swiper-button-next"
-          type="button"
-          aria-label="scroll right gallery"
-        >
-          <svg class="icon-swiper-right icon-swiper">
-            <use href="/kitchen-masters/assets/sprite-da0517d3.svg#right"></use>
-          </svg>
-        </button>
-        <button
-          class="swiper-button swiper-button-prev"
-          type="button"
-          aria-label="scroll left gallery"
-        >
-          <svg class="icon-swiper-left icon-swiper">
-            <use href="/kitchen-masters/assets/sprite-da0517d3.svg#left"></use>
-          </svg>
-        </button>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -623,13 +603,13 @@
       <p class="footer-text">On the right:</p>
       <ul class="footer-list">
         <li class="footer-list-item">
-          <a href="/pages/privacy-policy.html" class="footer-list-item-a"
+          <a href="./privacy-policy.html" class="footer-list-item-a"
             >Privacy policy</a
           >
         </li>
         <li class="footer-list-item">/</li>
         <li class="footer-list-item">
-          <a href="/pages/terms-conditions.html" class="footer-list-item-a"
+          <a href="./terms-conditions.html" class="footer-list-item-a"
             >Terms and conditions</a
           >
         </li>
