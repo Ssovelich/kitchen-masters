@@ -1,5 +1,6 @@
 .container-gallery {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   min-width: 100%;
 }
 .container-gallery > .swiper {

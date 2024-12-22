@@ -1,18 +1,11 @@
 .header {
-  /* position: fixed; */
+  position: fixed;
   background: var(--white-50);
   width: 100%;
   z-index: 9;
-  /* left: 50%;
-  transform: translateX(-50%); */
 }
 .hidden {
   display: none;
-}
-.container-header {
-  /* display: flex;
-  justify-content: space-between;
-  width: 1088px; */
 }
 .header-wrap {
   display: flex;
