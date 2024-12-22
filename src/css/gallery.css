@@ -1,13 +1,21 @@
-.container-gallery {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  min-width: 100%;
+.section-gallery {
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
+
 .container-gallery > .swiper {
   margin: 0 auto;
   width: 288px;
-  padding-bottom: 50px;
 }
+.swiper-pagination {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6px;
+  margin-top: 5px;
+}
+
 .swiper-pagination > .swiper-pagination-bullet {
   background: var(--golden-tainoi-400);
   opacity: 1;
@@ -60,9 +68,22 @@
 
 @media only screen and (min-width: 1200px) {
   .section-gallery {
-    padding-top: 80px;
+    margin-top: 0;
+    padding-top: 64px;
     padding-bottom: 56px;
+    margin-bottom: 0;
   }
+
+  .container-gallery {
+    padding-top: 16px;
+  }
+
+  .swiper-pagination {
+    margin-top: 32px;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+
   .container-gallery > .swiper {
     width: 880px;
   }
