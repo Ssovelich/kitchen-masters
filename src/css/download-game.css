@@ -1,11 +1,9 @@
-.section-download-game {
-  padding: 56px 0;
-}
 .container-download-game {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 38px;
+  padding: 56px 16px;
 }
 .download-img {
   border: 1px solid #ffefc6;

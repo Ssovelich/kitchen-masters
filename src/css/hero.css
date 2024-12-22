@@ -5,7 +5,27 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  padding-top: 55px;
 }
+
+/* .hero-section::before,
+.hero-section::after {
+  content: '';
+  position: absolute;
+  width: 1200px;
+  height: 3%;
+} */
+
+/* .hero-section::after {
+  top: 78px;
+  left: 16px;
+  background: linear-gradient(0deg, rgba(255, 249, 235, 0) 0%, #94320c 210%);
+}
+
+.hero-section::before {
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 249, 235, 0) 0%, #94320c 100%);
+} */
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -85,8 +105,10 @@
 @media only screen and (min-width: 1200px) {
   .hero-section {
     width: 1200px;
-    height: 759px;
+    /* height: 759px; */
+    height: 840px;
     background-image: url('/img/hero/backgound-desk.jpg');
+    padding-top: 80px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

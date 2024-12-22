@@ -30,7 +30,6 @@ body {
 }
 
 .section {
-  margin-top: 46px;
   scroll-margin-top: 46px;
 }
 .container {
@@ -41,7 +40,6 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .section {
-    margin-top: 78px;
     scroll-margin-top: 78px;
   }
   .container {

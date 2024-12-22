@@ -1,15 +1,14 @@
 .section-about {
   background: var(--golden-tainoi-400);
-  padding: 32px 0;
 }
 .container-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 32px;
+  padding: 32px 16px;
 }
-.about-wrapper {
-}
+
 .about-title {
   font-family: var(--second-family);
   font-size: 20px;
@@ -32,6 +31,7 @@
   }
   .container-about {
     flex-direction: row;
+    padding: 0 16px;
   }
   .about-title {
     font-size: 36px;
