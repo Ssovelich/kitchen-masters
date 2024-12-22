@@ -6,13 +6,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Keyboard, Mousewheel, Pagination],
+  modules: [Keyboard, Mousewheel, Pagination],
   speed: 1000,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
   pagination: {
     el: '.swiper-pagination',
