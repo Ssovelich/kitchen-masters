@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper/modules';
+import { Pagination, Keyboard, Mousewheel } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
