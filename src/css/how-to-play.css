@@ -34,12 +34,6 @@
     flex-direction: row-reverse;
     gap: 29px;
   }
-  /* .how-to-play-img {
-    order: 1;
-  }
-  .how-to-play-wrap-info {
-    order: 2;
-  } */
   .how-to-play-title {
     font-size: 36px;
   }
