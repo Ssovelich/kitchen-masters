@@ -20,6 +20,10 @@
 .terms-list-item {
   padding-bottom: 32px;
 }
+.terms-list-item:last-child {
+  padding-bottom: 0;
+}
+
 .terms-title {
   font-family: var(--second-family);
   font-size: 20px;
@@ -32,6 +36,9 @@
   text-indent: 12px;
   padding-bottom: 12px;
   font-size: 18px;
+}
+.terms-text:last-child {
+  padding-bottom: 0;
 }
 .list-link {
   list-style-type: disc;
