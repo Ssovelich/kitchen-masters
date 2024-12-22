@@ -1,0 +1,34 @@
+.hiddenLeft {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenCenter {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-out;
+}
+
+.hiddenTop {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenBot {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
