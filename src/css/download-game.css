@@ -32,6 +32,18 @@
   scale: 1.2;
 }
 
+.hiddenDownGameImg {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenDownGameInfo {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-out;
+}
+
 @media only screen and (min-width: 1200px) {
   .container-download-game {
     flex-direction: row-reverse;
@@ -44,5 +56,17 @@
     font-size: 28px;
     padding-bottom: 39px;
     line-height: 42px;
+  }
+
+  .hiddenDownGameImg {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+  }
+
+  .hiddenDownGameInfo {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
   }
 }

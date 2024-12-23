@@ -27,6 +27,18 @@
     2px 4px 6px 0 rgba(39, 29, 3, 0.33);
 }
 
+.hiddenHowToPlayInfo {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenHowToPlayImg {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-out;
+}
+
 @media only screen and (min-width: 1200px) {
   .section-how-to-play {
     padding: 53px 0;
@@ -45,5 +57,17 @@
   }
   .how-to-play-list {
     width: 424px;
+  }
+
+  .hiddenHowToPlayInfo {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+  }
+
+  .hiddenHowToPlayImg {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
   }
 }

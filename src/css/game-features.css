@@ -39,6 +39,36 @@
   width: 136px;
 }
 
+.hiddenFeaturesFirstEl {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenFeaturesSecondEl {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenFeaturesThirdEl {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenFeaturesFourthEl {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s ease-out;
+}
+
+.hiddenFeaturesFifthEl {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1s ease-out;
+}
+
 @media only screen and (min-width: 1200px) {
   .section-game-features {
     padding: 56px 0;
@@ -70,5 +100,35 @@
     line-height: 1.5;
     text-align: center;
     width: 272px;
+  }
+
+  .hiddenFeaturesFirstEl {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+  }
+
+  .hiddenFeaturesSecondEl {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+  }
+
+  .hiddenFeaturesThirdEl {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+  }
+
+  .hiddenFeaturesFourthEl {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
+  }
+
+  .hiddenFeaturesFifthEl {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-out;
   }
 }
