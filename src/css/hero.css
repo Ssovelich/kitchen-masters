@@ -1,5 +1,6 @@
 .hero-section {
   width: 320px;
+  background-color: var(--golden-tainoi-400);
   background-image: url('/img/hero/background-mob.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -50,8 +51,14 @@
 }
 
 .hero-download-a-img {
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: auto;
   margin-bottom: 24px;
+}
+
+.hero-download-a-img:hover,
+.hero-download-a-img:focus {
+  scale: 1.2;
 }
 
 .hero-text {
@@ -63,28 +70,37 @@
 
 .hero-girl {
   position: absolute;
-  top: 38px;
-  left: 7px;
+  opacity: 0;
+  transition: all 1.5s ease;
+  /* top: 38px;
+  left: 7px; */
 }
 
 .hero-chef {
   position: absolute;
-  top: 14px;
-  left: 163px;
+  opacity: 0;
+  transition: all 1.5s ease;
+
+  /* top: 14px;
+  left: 163px; */
 }
 
 .hero-kitchen-masters {
   position: absolute;
+  opacity: 0;
+  transition: all 1.5s ease;
   width: 240px;
-  top: 126px;
-  left: 39px;
+  /* top: 126px;
+  left: 39px; */
 }
 
 .hero-cooking-mania {
   position: absolute;
+  opacity: 0;
+  transition: all 1.5s ease;
   width: 220px;
-  top: 275px;
-  left: 49px;
+  /* top: 275px;
+  left: 49px; */
 }
 
 .hero-rocket {
@@ -103,17 +119,48 @@
   display: none;
 }
 
-.hiddenGirl {
-  opacity: 0;
-  transform: translateX(-100%) translateY(20px);
-  transition: all 1s ease-out;
+.partGirl {
+  left: -300px;
+  top: 80px;
+}
+.partChef {
+  left: 450px;
+  top: 80px;
+}
+.partKitchenMasters {
+  top: -400px;
+  left: 39px;
+}
+.partCookingMania {
+  top: -300px;
+  left: 49px;
 }
 
-.hiddenChef {
+.hero-img.show .partGirl {
+  left: 7px;
+  top: 38px;
+  opacity: 1;
+}
+.hero-img.show .partChef {
+  top: 14px;
+  left: 163px;
+  opacity: 1;
+}
+.hero-img.show .partKitchenMasters {
+  top: 126px;
+  left: 39px;
+  opacity: 1;
+}
+.hero-img.show .partCookingMania {
+  top: 275px;
+  left: 49px;
+  opacity: 1;
+}
+
+.hiddenDownGameBtn {
   opacity: 0;
-  transform: translateX(100%);
-  transform: translateY(20px);
-  transition: all 1s ease-out;
+  transform: translateY(200%);
+  transition: all 1.5s ease;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -171,17 +218,21 @@
   .hero-rocket {
     display: block;
     position: absolute;
+    opacity: 0;
+    transition: all 1.5s ease;
     width: 280px;
-    top: 300px;
-    left: 12px;
+    /* top: 300px;
+    left: 12px; */
   }
 
   .hero-dice {
     display: block;
     position: absolute;
+    opacity: 0;
+    transition: all 1.5s ease;
     width: 306px;
-    top: 350px;
-    left: 830px;
+    /* top: 350px;
+    left: 830px; */
   }
 
   .hero-hand-chef {
@@ -199,5 +250,72 @@
     top: 378px;
     left: 95px;
     z-index: 2;
+  }
+
+  .partGirl {
+    left: -300px;
+    top: 150px;
+  }
+  .partChef {
+    left: 1050px;
+    top: 150px;
+  }
+  .partKitchenMasters {
+    top: -500px;
+    left: 209px;
+  }
+  .partCookingMania {
+    top: -400px;
+    left: 265px;
+  }
+
+  .partDice {
+    left: 1050px;
+    top: 430px;
+  }
+  .partRocket {
+    top: 370px;
+    left: -200px;
+  }
+
+  .hero-img.show .partGirl {
+    top: 75px;
+    left: -75px;
+    opacity: 1;
+  }
+  .hero-img.show .partChef {
+    top: 105px;
+    left: 830px;
+    opacity: 1;
+  }
+  .hero-img.show .partKitchenMasters {
+    top: 10px;
+    left: 209px;
+    opacity: 1;
+  }
+  .hero-img.show .partCookingMania {
+    top: 435px;
+    left: 265px;
+    opacity: 1;
+  }
+  .hero-img.show .partDice {
+    top: 350px;
+    left: 830px;
+    opacity: 1;
+  }
+  .hero-img.show .partRocket {
+    top: 300px;
+    left: 12px;
+    opacity: 1;
+  }
+
+  .hiddenHeroDetails {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 1.5s ease;
+  }
+  .hiddenHeroDetails.show {
+    opacity: 1;
+    visibility: visible;
   }
 }

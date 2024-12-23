@@ -13,8 +13,6 @@ const classes = [
   'hiddenFeaturesFifthEl',
   'hiddenDownGameImg',
   'hiddenDownGameInfo',
-  'hiddenGirl',
-  'hiddenChef',
 ];
 
 const contents = document.querySelectorAll(
@@ -55,6 +53,17 @@ window.addEventListener('resize', () => {
   contents.forEach(content => observer.observe(content));
 });
 
-// window.addEventListener('scroll', () => {
-//   contents.forEach(content => observer.observe(content));
-// });
+window.addEventListener('load', () => {
+  document.querySelectorAll('.hero-img, .hiddenDownGameBtn').forEach(img => {
+    img.classList.add('show');
+  });
+});
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const elements = document.querySelectorAll('.hiddenHeroDetails');
+    elements.forEach(element => {
+      element.classList.add('show');
+    });
+  }, 2000);
+});
