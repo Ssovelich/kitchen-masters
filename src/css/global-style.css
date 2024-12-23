@@ -31,6 +31,7 @@ body {
 
 .section {
   scroll-margin-top: 46px;
+  overflow: hidden;
 }
 .container {
   max-width: 320px;
