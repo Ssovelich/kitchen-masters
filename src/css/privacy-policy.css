@@ -18,13 +18,23 @@
   margin: auto;
   width: 288px;
 }
+
+.privacy-list-link {
+  list-style-type: disc;
+  padding-left: 25px;
+  padding-bottom: 12px;
+}
+
+.privacy-list-item-item-link {
+  color: #1c03ae;
+}
+
 .privacy-list-item-link {
   font-size: 18px;
   letter-spacing: 0.01em;
   text-indent: 9px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #1c03ae;
 }
 .privacy-list-item-item {
   font-size: 18px;
@@ -138,6 +148,9 @@
     font-size: 20px;
   }
   .privacy-list-item-item {
+    font-size: 20px;
+  }
+  .privacy-list-item-link {
     font-size: 20px;
   }
 }
