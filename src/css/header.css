@@ -1,9 +1,3 @@
-.header-wrapper {
-  position: relative;
-  transform: translateZ(0);
-  z-index: 10;
-}
-
 .header {
   background: var(--white-50);
   position: fixed;
