@@ -1,6 +1,6 @@
 <section id="hero" class="section hero-section">
   <div class="container hero-container">
-    <picture class="hiddenGirl">
+    <picture class="hero-img">
       <source
         srcset="/img/hero/girl-desk.png 1x, /img/hero/girl-desk@2x.png 2x"
         media="(min-width: 1200px)" />
@@ -8,12 +8,11 @@
         srcset="/img/hero/girl-mob.png 1x, /img/hero/girl-mob@2x.png 2x"
         media="(min-width: 320px)" />
       <img
-        class="hero-girl"
+        class="hero-girl partGirl"
         src="/img/hero/girl-mob.png"
-        alt="hero-girl"
         loading="lazy"
     /></picture>
-    <picture class="hiddenChef">
+    <picture class="hero-img">
       <source
         srcset="/img/hero/chef-desk.png 1x, /img/hero/chef-desk@2x.png 2x"
         media="(min-width: 1200px)" />
@@ -21,19 +20,17 @@
         srcset="/img/hero/chef-mob.png 1x, /img/hero/chef-mob@2x.png 2x"
         media="(min-width: 320px)" />
       <img
-        class="hero-chef"
+        class="hero-chef partChef"
         src="/img/hero/chef-mob.png"
-        alt="hero-chef"
         loading="lazy"
     /></picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="
           /img/hero/kitchen-masters-desk.png    1x,
           /img/hero/kitchen-masters-desk@2x.png 2x
         "
         media="(min-width: 1200px)" />
-
       <source
         srcset="
           /img/hero/kitchen-masters-mob.png    1x,
@@ -41,12 +38,11 @@
         "
         media="(min-width: 320px)" />
       <img
-        class="hero-kitchen-masters"
+        class="hero-kitchen-masters partKitchenMasters"
         src="/img/hero/kitchen-masters-mob.png"
-        alt="hero-kitchen-masters"
         loading="lazy"
     /></picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="
           /img/hero/cooking-mania-desk.png    1x,
@@ -60,47 +56,53 @@
         "
         media="(min-width: 320px)" />
       <img
-        class="hero-cooking-mania"
+        class="hero-cooking-mania partCookingMania"
         src="/img/hero/cooking-mania-mob.png"
-        alt="hero-cooking-mania"
         loading="lazy"
     /></picture>
-    <picture>
+    <picture class="hero-img">
       <source srcset="/img/hero/dice.png 1x, /img/hero/dice@2x.png 2x" />
       <img
-        class="hero-dice"
+        class="hero-dice partDice"
         src="/img/hero/dice.png"
         alt="hero-dice"
         loading="lazy"
       />
     </picture>
-    <picture>
+    <picture class="hero-img">
       <source srcset="/img/hero/rocket.png 1x, /img/hero/rocket@2x.png 2x" />
       <img
-        class="hero-rocket"
+        class="hero-rocket partRocket"
         src="/img/hero/rocket.png"
         alt="hero-rocket"
         loading="lazy"
       />
     </picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="/img/hero/handChef.png 1x, /img/hero/handChef@2x.png 2x"
       />
-      <img class="hero-hand-chef" src="/img/hero/handChef.png" loading="lazy" />
+      <img
+        class="hero-hand-chef hiddenHeroDetails"
+        src="/img/hero/handChef.png"
+        loading="lazy"
+      />
     </picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="/img/hero/detalRocket.png 1x, /img/hero/detalRocket@2x.png 2x"
       />
       <img
-        class="hero-detal-rocket"
+        class="hero-detal-rocket hiddenHeroDetails"
         src="/img/hero/detalRocket.png"
         loading="lazy"
       />
     </picture>
-    <div class="hero-wrapper-download">
-      <a class="hero-download-a" href="">
+    <div class="hero-wrapper-download hiddenDownGameBtn">
+      <a
+        class="hero-download-a"
+        href="https://play.google.com/store/apps/details?id=com.bigger.kitchenmasters"
+      >
         <img
           class="hero-download-a-img"
           src="/img/google.png"
