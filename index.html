@@ -13,9 +13,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/kitchen-masters/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/style-3f5ae37f.js">
+    <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/style-a44584b0.js">
     <link rel="modulepreload" crossorigin href="/kitchen-masters/assets/vendor-b956dc15.js">
-    <link rel="stylesheet" href="/kitchen-masters/assets/style-ca33b818.css">
+    <link rel="stylesheet" href="/kitchen-masters/assets/style-504e17ad.css">
     <link rel="stylesheet" href="/kitchen-masters/assets/vendor-ecee2773.css">
   </head>
   <body>
@@ -100,7 +100,7 @@
     <main>
       <section id="hero" class="section hero-section">
   <div class="container hero-container">
-    <picture class="hiddenGirl">
+    <picture class="hero-img">
       <source
         srcset="/kitchen-masters/assets/girl-desk-6b0d1958.png 1x, /kitchen-masters/assets/girl-desk@2x-b286bb55.png 2x"
         media="(min-width: 1200px)" />
@@ -108,12 +108,11 @@
         srcset="/kitchen-masters/assets/girl-mob-c30a3a03.png 1x, /kitchen-masters/assets/girl-mob@2x-4f5811c8.png 2x"
         media="(min-width: 320px)" />
       <img
-        class="hero-girl"
+        class="hero-girl partGirl"
         src="/kitchen-masters/assets/girl-mob-c30a3a03.png"
-        alt="hero-girl"
         loading="lazy"
     /></picture>
-    <picture class="hiddenChef">
+    <picture class="hero-img">
       <source
         srcset="/kitchen-masters/assets/chef-desk-2a773a7c.png 1x, /kitchen-masters/assets/chef-desk@2x-6899b1b7.png 2x"
         media="(min-width: 1200px)" />
@@ -121,26 +120,23 @@
         srcset="/kitchen-masters/assets/chef-mob-cc72a349.png 1x, /kitchen-masters/assets/chef-mob@2x-1d03d4ee.png 2x"
         media="(min-width: 320px)" />
       <img
-        class="hero-chef"
+        class="hero-chef partChef"
         src="/kitchen-masters/assets/chef-mob-cc72a349.png"
-        alt="hero-chef"
         loading="lazy"
     /></picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="/kitchen-masters/assets/kitchen-masters-desk-b3f9a831.png 1x, /kitchen-masters/assets/kitchen-masters-desk@2x-2ecf7637.png 2x"
         media="(min-width: 1200px)" />
-
       <source
         srcset="/kitchen-masters/assets/kitchen-masters-mob-b2626736.png 1x, /kitchen-masters/assets/kitchen-masters-mob@2x-83288ac9.png 2x"
         media="(min-width: 320px)" />
       <img
-        class="hero-kitchen-masters"
+        class="hero-kitchen-masters partKitchenMasters"
         src="/kitchen-masters/assets/kitchen-masters-mob-b2626736.png"
-        alt="hero-kitchen-masters"
         loading="lazy"
     /></picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="/kitchen-masters/assets/cooking-mania-desk-0347ea31.png 1x, /kitchen-masters/assets/cooking-mania-desk@2x-958df718.png 2x"
         media="(min-width: 1200px)" />
@@ -148,47 +144,53 @@
         srcset="/kitchen-masters/assets/cooking-mania-mob-50d1e23a.png 1x, /kitchen-masters/assets/cooking-mania-mob@2x-09f05b34.png 2x"
         media="(min-width: 320px)" />
       <img
-        class="hero-cooking-mania"
+        class="hero-cooking-mania partCookingMania"
         src="/kitchen-masters/assets/cooking-mania-mob-50d1e23a.png"
-        alt="hero-cooking-mania"
         loading="lazy"
     /></picture>
-    <picture>
+    <picture class="hero-img">
       <source srcset="/kitchen-masters/assets/dice-e2176310.png 1x, /kitchen-masters/assets/dice@2x-88f1897f.png 2x" />
       <img
-        class="hero-dice"
+        class="hero-dice partDice"
         src="/kitchen-masters/assets/dice-e2176310.png"
         alt="hero-dice"
         loading="lazy"
       />
     </picture>
-    <picture>
+    <picture class="hero-img">
       <source srcset="/kitchen-masters/assets/rocket-f463ecb3.png 1x, /kitchen-masters/assets/rocket@2x-4ea8ee20.png 2x" />
       <img
-        class="hero-rocket"
+        class="hero-rocket partRocket"
         src="/kitchen-masters/assets/rocket-f463ecb3.png"
         alt="hero-rocket"
         loading="lazy"
       />
     </picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="/kitchen-masters/assets/handChef-e61eb5c0.png 1x, /kitchen-masters/assets/handChef@2x-734c3d04.png 2x"
       />
-      <img class="hero-hand-chef" src="/kitchen-masters/assets/handChef-e61eb5c0.png" loading="lazy" />
+      <img
+        class="hero-hand-chef hiddenHeroDetails"
+        src="/kitchen-masters/assets/handChef-e61eb5c0.png"
+        loading="lazy"
+      />
     </picture>
-    <picture>
+    <picture class="hero-img">
       <source
         srcset="/kitchen-masters/assets/detalRocket-dc9d88f7.png 1x, /kitchen-masters/assets/detalRocket@2x-7ef12671.png 2x"
       />
       <img
-        class="hero-detal-rocket"
+        class="hero-detal-rocket hiddenHeroDetails"
         src="/kitchen-masters/assets/detalRocket-dc9d88f7.png"
         loading="lazy"
       />
     </picture>
-    <div class="hero-wrapper-download">
-      <a class="hero-download-a" href="">
+    <div class="hero-wrapper-download hiddenDownGameBtn">
+      <a
+        class="hero-download-a"
+        href="https://play.google.com/store/apps/details?id=com.bigger.kitchenmasters"
+      >
         <img
           class="hero-download-a-img"
           src="data:image/png;base64,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"
