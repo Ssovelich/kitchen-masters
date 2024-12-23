@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 46px;
 }
 
 body {
@@ -29,8 +30,14 @@ body {
   color: var(--white-950);
 }
 
+.section::before {
+  content: '';
+  display: block;
+  height: 60px; /* Замените на высоту вашего хедера */
+  margin-top: -60px;
+}
+
 .section {
-  scroll-margin-top: 46px;
   overflow: hidden;
 }
 .container {
