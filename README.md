@@ -23,8 +23,8 @@ engaging UI.
 
 ### Desktop
 
-![Desktop version](./public/screenshot-desktop.jpg)
+![Desktop version](./assets/screenshot-desktop.jpg)
 
 ### Mobile
 
-![Mobile version](./public/screenshot-mobile.jpg)
+![Mobile version](./assets/screenshot-mobile.jpg)
